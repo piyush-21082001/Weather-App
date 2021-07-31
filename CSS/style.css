@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@700');
+
+body {
+    background-image: url(./PSX_20200720_182028.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* background: #00F260; 
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+    background: linear-gradient(to right, #0575E6, #00F260); */
+
+    color: rgb(231, 231, 231);
+}
+
+.topBar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.logo {
+    width: 90px;
+    height: 70px;
+}
+
+.title {
+    margin-left: 14px;
+    margin-top: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-family: 'Tourney';
+    }
+
+.mainTile {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 25px;
+    background-image: linear-gradient();
+    color: rgb(238, 238, 238);
+    box-shadow: 0 0px 30px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.cityName {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    outline: none;
+    width: 40%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Oswald', sans-serif;
+    transition: all 0.15s ease-in-out;
+}
+
+.cityName:hover {
+    transform: scale(1.1);
+}
+
+.submit {
+    margin-left: 3%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    outline: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    border: rgb(61, 61, 61) solid 1px;
+    cursor: pointer;
+    transition: ease-in 0.15s all;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Oswald', sans-serif;
+}
+
+.submit:hover {
+    color: white;
+    background-color: rgb(230, 163, 39);
+    transform: scale(1.1);
+}
+
+.upperHalf {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.tempPlace {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4%;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+
+.lowerHalf {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.windSpeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
+.sun {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
+.clockOut {
+    font-size: 5rem;
+    font-weight: 600;
+    font-stretch: extra-condensed;
+}
+
+.indianTime {
+    font-size: 1.2rem;
+    padding-top: 4%;
+}
+
+.temperature {
+    font-size: 6rem;
+    font-weight: lighter;
+    font-stretch: condensed;
+
+}
+
+.inFahrenheit {
+    font-size: 1.5rem;
+    align-self: flex-end;
+}
+
+#speed,#degrees {
+    font-size: 1.7rem;
+    font-weight: 600
+}
+
+#sunrise,#sunset {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.span {
+    font-weight: 600;
+}
+
+.endLogo{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 140px;
+    height: 70px;
+}
+
+.endBar{
+    display: flex;
+    justify-content: center;
+}
+
+#cond_logo {
+    animation : rotates 1s linear infinite alternate;
+}
+@keyframes rotates{
+    from {transform: translateX(-0.5rem);}
+    to {transform: translateX(0.5rem);}
+}

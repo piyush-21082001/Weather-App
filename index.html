@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="topBar">
+           <img src="img/Weather Minimal2.png" alt="LOGO" class="logo"> 
+           <h1 class="title">Weather</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Enter a City Name" class="cityName">
+            <button class="submit">Submit</button>
+        </div>
+        <div class="mainTile">
+            <div class="upperHalf">
+                <div class="time">
+                    <div class="clockOut" onload="getTime()"></div>
+                    <div class="indianTime">Indian Standard Time (IST)</div>
+                </div>
+                <div class="tempPlace">
+                    <div class="temperature">HELLO</div>
+                    <div class="inFahrenheit">Sunshine !!</div>
+                </div>
+            </div>
+            <div class="lowerHalf">
+                <div class="name">
+                    <span id="location"></span>
+                    <span id="cond_logo"></span>
+                    <span id="conditions"></span>
+                </div>
+                <div class="windSpeed">
+                    <span id="speed"></span>
+                    <span id="degrees"></span>
+                </div>
+                <div class="sun">
+                    <span id="sunrise"></span>  <!--also design the clip arts for these.-->
+                    <span id="sunset"></span> <!--also design the clip arts for these.-->
+                </div>
+            </div>
+        </div>
+        <div class="endBar">
+            <img src="./img/logo_white_cropped.png" alt="logo company ka" class="endLogo">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+    <script src="./JS/animate.js"></script>
+    <script src="./JS/time.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>
